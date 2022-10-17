@@ -37,6 +37,8 @@ project {
 object Build : BuildType({
     name = "Build Plaindoll"
 
+    artifactRules = "target/*.jar => target"
+
     vcs {
         root(GitGithubComVp32exampleTeamcityGitRefsHeadsMaster)
     }
